@@ -1,6 +1,5 @@
 safe: true
 lsi: false
-baseurl: /DevJournal
 permalink: /DevJournal/:title
 name: "Dev Journal"
 highlighter: pygments
