@@ -1,0 +1,70 @@
+<header>
+    <div class="container">
+        <div class="profile">
+            <div class="social">
+                <a href="http://twitter.com/chinapaul">
+                    <div data-picture data-alt="Twitter">
+                        <div data-src="{{ site.baseurl }}/img/twitter16.png"></div>
+                        <div data-src="{{ site.baseurl }}/img/twitter32.png"     data-media="(-webkit-min-device-pixel-ratio: 2)"></div>
+                        <noscript><img src="{{ site.baseurl }}/img/twitter16.png" alt="Twitter"></noscript>
+                    </div>
+                </a>
+                <a href="http://github.com/chinapaul">
+                    <div data-picture data-alt="Github">
+                        <div data-src="{{ site.baseurl }}/img/octocat16.png"></div>
+                        <div data-src="{{ site.baseurl }}/img/octocat32.png"     data-media="(-webkit-min-device-pixel-ratio: 2)"></div>
+                        <noscript><img src="{{ site.baseurl }}/img/octocat16.png" alt="Github"></noscript>
+                    </div>
+                </a>
+            </div>
+            <div class="avatar" data-picture data-alt="avatar">
+                <div data-src="{% include avatar_url %}?s=54"></div>
+                <div data-src="{% include avatar_url %}?s=108" data-media="(-webkit-min-device-pixel-ratio: 2)"></div>
+                <noscript><img src="{% include avatar_url %}?s=54" alt="avatar"></noscript>
+            </div>
+        </div>
+        <h1 class="logo"><a href="{{ site.baseurl }}/">Dev Journal</a></h1> <h6 class="logo"> notes by <a href="http://paulwoodiii.com">Paul Wood</a></h6>
+        <nav class="main">
+			
+            <ul>
+                {% if page.subnav == "home" %}
+                  <li><a href="/{{ site.baseurl }}" class="active" data-subnav="home">Home</a></li>
+                {% else %}
+                    <li><a href="/{{ site.baseurl }}" data-subnav="home">Home</a></li>
+                {% endif %}
+                {% if page.subnav == "Blog" %}
+                    <li><a href="http://paulwoodiii.com" class="active" data-subnav="blog">Blog</a></li>
+                {% else %}
+                    <li><a href="http://paulwoodiii.com" data-subnav="blog">Blog</a></li>
+                {% endif %}
+                {% if page.subnav == "Portfolio" %}
+                    <li><a href="http://paulwoodiii.com/portfolio" class="active" data-subnav="Portfolio">Portfolio</a></li>
+                {% else %}
+                    <li><a href="http://paulwoodiii.com/portfolio" data-subnav="Portfolio">Portfolio</a></li>
+                {% endif %}
+            </ul>
+			
+
+        </nav>
+        <div class="nav-slider">
+            <div class="nav-selection {{ page.nav }}"></div>
+        </div>
+        <div class="subnav-slider">
+            <div class="subnav-selection {{ page.subnav }}"></div>
+        </div>
+        <!-- <nav class="subnav">
+            <ul>
+                {% if page.nav == "blog" %}
+                    <li><a href="http://paulwoodiii.com" class="active">Blog</a></li>
+                {% else %}
+                    <li><a href="http://paulwoodiii.com">Blog</a></li>
+                {% endif %}
+                {% if page.nav == "projects" %}
+                <li><a href="http://paulwoodiii.com/portfolio" class="active">Portfolio</a></li>
+                {% else %}
+                <li><a href="http://paulwoodiii.com/portfolio">Portfolio</a></li>
+                {% endif %}
+            </ul> -->
+        </nav>
+    </div>
+</header>

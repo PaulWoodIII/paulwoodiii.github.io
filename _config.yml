@@ -1,0 +1,9 @@
+safe: true
+lsi: false
+baseurl: /DevJournal
+permalink: /DevJournal/:title
+name: "Dev Journal"
+highlighter: pygments
+github: "metadata"
+exclude: ['Gemfile','Gemfile.lock','Rakefile','.git']
+paginate: 4
