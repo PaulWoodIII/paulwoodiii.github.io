@@ -7,8 +7,7 @@ I was wondering when I’d hit this problem and I just did, looping through one 
 
 You can’t just do a for loop in javascript since everything is asynchronous, (read the article for more info)
 
-Heres an article on doing a loop in node.js that waits for the callback of the previous call of the function to finish before it moves to the next
-http://www.richardrodger.com/2011/04/21/node-js-how-to-write-a-for-loop-with-callbacks/#.VQo3tBCUcpA
+[Heres an article](http://www.richardrodger.com/2011/04/21/node-js-how-to-write-a-for-loop-with-callbacks/#.VQo3tBCUcpA) on doing a loop in node.js that waits for the callback of the previous call of the function to finish before it moves to the next.
 
 Heres a snippet I want to keep around, I have a feels I'll be using it a lot.
 
